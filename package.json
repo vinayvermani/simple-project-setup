@@ -1,0 +1,23 @@
+{
+  "name": "simple-app-setup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-dev": "lite-server -c config/bs-config.json",
+    "babel": "babel src --out-dir dist/scripts",
+    "build": "browserify src/scripts/main.js -t babelify --outfile dist/scripts/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "babelify": "^10.0.0",
+    "lite-server": "^2.4.0",
+    "watchify": "^3.11.0"
+  }
+}
